@@ -138,4 +138,3 @@ def txtsec(text: str) -> float:
         elif letters[0] in ("y","Y"):
             seconds += number * 31536000
     return seconds
-
