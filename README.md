@@ -2,6 +2,8 @@
 
 Converts seconds to human readable text or tuple
 
+[![CodeQL](https://github.com/Sumiza/secondstotext/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/codeql-analysis.yml)[![Pylint](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml)[![Upload Python Package](https://github.com/Sumiza/secondstotext/actions/workflows/python-publish.yml/badge.svg)](https://pypi.org/project/secondstotext/)
+
 ```
     Args:
         seconds:
