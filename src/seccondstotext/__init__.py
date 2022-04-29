@@ -1,2 +1,2 @@
 # empty init file
-from .main import Sectext
+from .main import Sectext, txtsec
