@@ -2,4 +2,4 @@
 """
 import only
 """
-from .main import Sectext, txtsec
+from .main import Sectxt, txtsec
