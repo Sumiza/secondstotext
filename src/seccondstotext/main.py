@@ -139,8 +139,3 @@ def txtsec(text: str) -> float:
             seconds += number * 31536000
     return seconds
 
-
-# print(Texttosec("445 Ms, 1 Day, 1 Hour, 1 Minute, 1 Second, 1 ms"))
-print(txtsec("1 Year, 2 Months, 3 Days, 4 Hours, 5 Minutes, 6 Seconds"))
-print(txtsec("0 years"))
-print(Sectxt.showall(4564645))
