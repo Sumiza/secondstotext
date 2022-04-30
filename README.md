@@ -6,7 +6,7 @@ Converts seconds to human readable text or tuple, and back again.
 [![Pylint](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml) 
 [![Upload Python Package](https://github.com/Sumiza/secondstotext/actions/workflows/python-publish.yml/badge.svg)](https://pypi.org/project/secondstotext/) 
 
-```
+```python
 from secondstotext import Sectxt, txtsec
 ```
 
