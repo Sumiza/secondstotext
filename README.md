@@ -13,13 +13,11 @@ from secondstotext import Sectxt, txtsec
 ```
     Sectxt: Converts seconds to text
     Args:
-        seconds:
-                    Amount of seconds for it to process.
+        seconds:    Amount of seconds for it to process.
                     Can be float (at least 3 decimals) or int.
                     Can be negative but will be changed to positive.
 
-      listgen:
-                    Generates a list of responses
+        listgen:    Generates a list of responses
                     used for string generation but can
                     be used externally if needed.
                     print(Sectxt(-12069123).listgen())
@@ -32,7 +30,7 @@ from secondstotext import Sectxt, txtsec
                     print(Sectxt(12069123).showall())
                     0 Years, 4 Months, 18 Days, 0 Hours, 32 Minutes, 3 Seconds, 0 ms
 
-       rawtuple:   returns a 7 part tuple.
+       rawtuple:    returns a 7 part tuple.
                     print(Sectxt(12069123).rawtuple())
                     (0, 4, 18, 0, 32, 3, 0)
 
