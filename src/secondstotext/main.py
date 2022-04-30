@@ -105,6 +105,7 @@ def txtsec(text: str) -> float:
             Y,y,M,D,d,H,h,m,S,s,ms are all accepted.
             Capitalized M is Month and lower case m is minute if single letter.
             print(txtsec("1 Year, 2 Months, 3 Days, 4 Hours, 5 Minutes, 6 Seconds, 7 ms"))
+            print(txtsec("1y,2M,3d,4H,5n,6s,7ms"))
             = 37065900.007
     """
     if isinstance(text,str):
