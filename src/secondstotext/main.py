@@ -28,7 +28,7 @@ class Sectxt():
             self.minutes, self.seconds = divmod(self.seconds,60)
 
         else:
-            ValueError("Please provide a float or int")
+            raise ValueError("Please provide a float or int")
 
     def listgen(self) -> list:
         """
@@ -104,37 +104,39 @@ def txtsec(text: str) -> float:
             Years, Months, Days, Hours, Minutes, Seconds, ms
             Y,y,M,D,d,H,h,m,S,s,ms are all accepted.
             Capitalized M is Month and lower case m is minute if single letter.
-            e.g. "1 Year, 2 Months, 3 Days, 4 Hours, 5 Minutes, 6 Seconds, 7 ms"
+            print(txtsec("1 Year, 2 Months, 3 Days, 4 Hours, 5 Minutes, 6 Seconds, 7 ms"))
             = 37065900.007
     """
-    seconds = 0
-    for var in text.split(","):
-        numbers = []
-        letters = []
-        for char in var:
-            if char.isdigit():
-                numbers.append(char)
-            elif char.isalpha():
-                letters.append(char)
-        try:
-            number = float("".join(numbers))
-        except ValueError:
-            return ValueError("ERROR: Please check formatting")
-        if letters[0] in ("m","M"):
-            if len(letters) > 1 and letters[1] == "s" :
-                seconds += number / 1000
-            elif len(letters) > 1 and letters[1] == "i":
-                seconds += number * 60
-            elif len(letters) > 1 and letters[1] == "o":
-                seconds += number * 2628000
-            elif letters[0] == "m":
-                seconds += number * 60
-            elif letters[0] == "M":
-                seconds += number * 2628000
-        elif letters[0] in ("h","H"):
-            seconds += number * 3600
-        elif letters[0] in ("d","D"):
-            seconds += number * 86400
-        elif letters[0] in ("y","Y"):
-            seconds += number * 31536000
-    return seconds
+    if isinstance(text,str):
+        seconds = 0
+        for var in text.split(","):
+            numbers = []
+            letters = []
+            for char in var:
+                if char.isdigit():
+                    numbers.append(char)
+                elif char.isalpha():
+                    letters.append(char)
+            try:
+                number = float("".join(numbers))
+            except ValueError as error:
+                raise ValueError(f"Please check formatting of - {text}") from error
+            if letters[0] in ("m","M"):
+                if len(letters) > 1 and letters[1] == "s" :
+                    seconds += number / 1000
+                elif len(letters) > 1 and letters[1] == "i":
+                    seconds += number * 60
+                elif len(letters) > 1 and letters[1] == "o":
+                    seconds += number * 2628000
+                elif letters[0] == "m":
+                    seconds += number * 60
+                elif letters[0] == "M":
+                    seconds += number * 2628000
+            elif letters[0] in ("h","H"):
+                seconds += number * 3600
+            elif letters[0] in ("d","D"):
+                seconds += number * 86400
+            elif letters[0] in ("y","Y"):
+                seconds += number * 31536000
+        return seconds
+    raise ValueError("Please provide a string")
