@@ -11,7 +11,7 @@ from secondstotext import Sectxt, txtsec
 ```
 
 ```
-    Sectxt:
+    Sectxt: Converts seconds to text
     Args:
         seconds:
                     Amount of seconds for it to process.
