@@ -4,7 +4,8 @@ Converts seconds to human readable text or tuple, and back again.
 
 [![CodeQL](https://github.com/Sumiza/secondstotext/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/codeql-analysis.yml)
 [![Pylint](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/pylint.yml) 
-[![Upload Python Package](https://github.com/Sumiza/secondstotext/actions/workflows/python-publish.yml/badge.svg)](https://pypi.org/project/secondstotext/) 
+[![Upload Python Package](https://github.com/Sumiza/secondstotext/actions/workflows/python-publish.yml/badge.svg)](https://pypi.org/project/secondstotext/)
+[![Python package](https://github.com/Sumiza/secondstotext/actions/workflows/python-package.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/python-package.yml)
 ![mit](https://img.shields.io/github/license/sumiza/secondstotext)
 [![PyPI](https://img.shields.io/pypi/v/secondstotext)](https://pypi.org/project/secondstotext/)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sumiza/secondstotext?label=Github)
