@@ -7,7 +7,7 @@ Converts seconds to human readable text or tuple, and back again.
 [![Upload Python Package](https://github.com/Sumiza/secondstotext/actions/workflows/python-publish.yml/badge.svg)](https://pypi.org/project/secondstotext/)
 [![Python package](https://github.com/Sumiza/secondstotext/actions/workflows/python-package.yml/badge.svg)](https://github.com/Sumiza/secondstotext/actions/workflows/python-package.yml)
 ![mit](https://img.shields.io/github/license/sumiza/secondstotext)
-[![PyPI](https://img.shields.io/pypi/v/secondstotext)](https://pypi.org/project/secondstotext/)
+[![PyPI](https://img.shields.io/pypi/v/secondstotext?label=pip)](https://pypi.org/project/secondstotext/)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sumiza/secondstotext?label=Github)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/secondstotext)
 
