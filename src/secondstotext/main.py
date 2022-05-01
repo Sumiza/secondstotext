@@ -86,13 +86,19 @@ class Sectxt():
             self.seconds,
             self.milliseconds)
 
-    def __str__(self) -> str:
+    def default(self) -> str:
         """
         default:    skips any part of the response that is 0.
                     print(Secondstotext(12069123.135156484))
                     4 Months, 18 Days, 32 Minutes, 3 Seconds, 135ms
         """
         return ", ".join([ res for res in self.listgen() if res[0] != "0" ])
+
+    def __str__(self) -> str:
+        """
+        __str__:    returns default response.
+        """
+        return self.default()
 
 def txtsec(text: str) -> float:
     """
@@ -139,5 +145,7 @@ def txtsec(text: str) -> float:
                 seconds += number * 86400
             elif letters[0] in ("y","Y"):
                 seconds += number * 31536000
+            elif letters[0] in ("s","S"):
+                seconds += number
         return seconds
     raise ValueError("Please provide a string")
